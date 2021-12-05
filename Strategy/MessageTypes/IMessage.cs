@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Strategy.MessageTypes
 {
-    public interface ISms : IMessage
+    public interface IMessage
     {
+        public void SendMessage(string message);
     }
 }

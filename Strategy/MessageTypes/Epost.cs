@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Strategy.MessageTypes
 {
-    class FaceBook : IFacebook
+    public class Epost : IEpost
     {
-
         public void SendMessage(string message)
         {
-            Console.WriteLine($"sending \"{message}\" as a Facebook message");
+            Console.WriteLine($"sending \"{message}\" as an email");
         }
     }
 }

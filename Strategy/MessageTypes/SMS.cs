@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Strategy.MessageTypes
 {
-    internal class SMS : ISMS
+    public class Sms : ISms
     {
-        public void Send()
+        public void SendMessage(string message)
         {
-            Console.WriteLine("This is the message");
+            Console.WriteLine($"sending \"{message}\" as a sms");
         }
     }
 }

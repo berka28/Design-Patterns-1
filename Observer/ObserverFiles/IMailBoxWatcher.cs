@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Strategy.MessageTypes
+namespace Observer.ObserverFiles
 {
-    public interface ISms : IMessage
+    interface IMailBoxWatcher : IObserver
     {
     }
 }

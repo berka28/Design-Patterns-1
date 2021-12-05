@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Strategy.MessageTypes
 {
-    internal class Email : IEmail
+    public interface IEpost : IMessage
     {
-        public void Send()
-        {
-            Console.WriteLine("This is the message");
-        }
     }
 }

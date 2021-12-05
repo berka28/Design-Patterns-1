@@ -1,6 +1,12 @@
-﻿namespace Strategy.MessageTypes
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Strategy.MessageTypes
 {
-    internal interface IFacebook : IMessageTypes
+    public interface IFacebook : IMessage
     {
     }
 }

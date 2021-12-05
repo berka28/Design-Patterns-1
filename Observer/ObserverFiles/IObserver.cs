@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Strategy.MessageTypes
+namespace Observer.ObserverFiles
 {
-    internal interface IMessageTypes
+    public interface IObserver
     {
-        public void Send();
+        public void Update();
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Autofac;
+using Observer.ObserverFiles;
+using System;
 
 namespace Observer
 {
@@ -6,7 +8,8 @@ namespace Observer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ObserverClass.Run();
+
         }
     }
 }

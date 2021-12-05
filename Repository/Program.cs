@@ -3,15 +3,12 @@ using System;
 
 namespace Repository
 {
-    internal class Program
+    class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
-            var container = AFConfig.Configure();
+            RepositoryClass.Run();
 
-            using var scope = container.BeginLifetimeScope();
-            var app = scope.Resolve<IApplication>();
-            app.Run();
         }
     }
 }

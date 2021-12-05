@@ -5,13 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Strategy.Message
+namespace Strategy
 {
-
-    internal interface IMessage
+    public interface IMessageHandler
     {
-        IMessageTypes MessageTypes { get; set; }
+        public IMessage Message { get; set; }
 
-        void Send();
+        public void SendMessage(string message);
     }
 }
