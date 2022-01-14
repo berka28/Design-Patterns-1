@@ -21,8 +21,8 @@ namespace Repository
 
         public string GetCustomer()
         {
-            var costomer = Load("From Table Customer Where Name == Steve");
-            return costomer;
+            var customer = Load("From Table Customer Where Name == Steve");
+            return customer;
         }
 
         public string GetData()

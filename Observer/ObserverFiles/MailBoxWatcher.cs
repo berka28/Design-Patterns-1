@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace Observer.ObserverFiles
 {
-    public class MailBoxWatcher
+    public class MailBoxWatcher : IMailBoxWatcher
     {
-        MailBox Email = new MailBox();
 
-        public void Update()
+        public void Update(string message)
         {
-            Email.CreateTimer();
+            Console.WriteLine(message);
         }
     }
 }

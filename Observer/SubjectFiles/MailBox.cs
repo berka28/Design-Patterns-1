@@ -17,11 +17,11 @@ namespace Observer.SubjectFiles
             Observers = new List<IObserver>();
         }
 
-        public void notifyObservers()
+        public void notifyObservers(string message)
         {
             foreach (var observer in Observers)
             {
-                observer.Update();
+                observer.Update(message);
             }
         }
 
@@ -47,13 +47,12 @@ namespace Observer.SubjectFiles
             Console.WriteLine("Press the Enter key to exit the program at any time... ");
             Console.ReadLine();
 
-            notifyObservers();
-
         }
 
         public void HandleTimerElapsed(object sender, ElapsedEventArgs e)
         {
-            Console.WriteLine("You have a new mail", e.SignalTime);
+            string message = "You have new email";
+            notifyObservers(message);
         }
     }
 }
